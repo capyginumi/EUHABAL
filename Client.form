@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Client">
+  <grid id="27dc6" binding="panelClient" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="520" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-10937835"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="e8e40" binding="tabPanelClient">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10937835"/>
+          <font name="Courier New" size="11"/>
+          <foreground color="-9608"/>
+          <tabLayoutPolicy value="0"/>
+          <tabPlacement value="3"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="cbca3" layout-manager="GridBagLayout">
+            <constraints>
+              <tabbedpane title="BOOK"/>
+            </constraints>
+            <properties>
+              <background color="-10937835"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="29e61" class="javax.swing.JLabel" binding="logo">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <text value="Logo"/>
+                  <verticalAlignment value="1"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="1aae2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Courier New" size="15"/>
+                  <foreground color="-524"/>
+                  <text value="WHERE ARE YOU GOING TO"/>
+                </properties>
+              </component>
+              <component id="e2fea" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Courier New" size="15"/>
+                  <foreground color="-524"/>
+                  <text value="VEHICLE"/>
+                </properties>
+              </component>
+              <component id="ce9a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Courier New" size="15"/>
+                  <foreground color="-524"/>
+                  <text value="PAYMENT"/>
+                </properties>
+              </component>
+              <component id="35b9b" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Helvetica" size="15"/>
+                  <model>
+                    <item value="SELECT"/>
+                    <item value="GULANG-GULANG TERMINAL"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="8999f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Impact" size="64"/>
+                  <foreground color="-524"/>
+                  <text value="USER!"/>
+                </properties>
+              </component>
+              <grid id="c0765" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10937835"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="d2d22" class="javax.swing.JRadioButton" binding="choicesButtonsCar">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="63dd4" class="javax.swing.JLabel" binding="iconMotorcyle">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="car"/>
+                    </properties>
+                  </component>
+                  <component id="7aa11" class="javax.swing.JRadioButton" binding="choicesButtonMotorcycle">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica"/>
+                      <horizontalAlignment value="2"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="ff3d5" class="javax.swing.JLabel" binding="iconCar">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <text value="motorcycle"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="72d9f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <font name="Impact" size="64"/>
+                  <foreground color="-524"/>
+                  <text value="HELLO,"/>
+                </properties>
+              </component>
+              <grid id="85d59" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10937835"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="12872" class="javax.swing.JRadioButton" binding="choicesButtonCash">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="12098" class="javax.swing.JLabel" binding="iconCash">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="car"/>
+                    </properties>
+                  </component>
+                  <component id="182a8" class="javax.swing.JRadioButton" binding="choicesButtonAccountButton">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica"/>
+                      <horizontalAlignment value="2"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="2849c" class="javax.swing.JLabel" binding="iconAccountBalance">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <text value="motorcycle"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="7d6aa" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="HISTORY"/>
+            </constraints>
+            <properties>
+              <background color="-10937835"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="c7dc" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="PROFILE"/>
+            </constraints>
+            <properties>
+              <background color="-10937835"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="d878c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="SETTINGS"/>
+            </constraints>
+            <properties>
+              <background color="-10937835"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
