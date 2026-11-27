@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Authentication">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="src.Authentication">
   <grid id="27dc6" binding="panelAuthentication" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
@@ -32,19 +32,6 @@
       <component id="45806" class="javax.swing.JTextField" binding="inputUsername">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="370" height="60"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-524"/>
-          <font name="Courier New" size="16"/>
-          <foreground color="-10105"/>
-          <horizontalAlignment value="0"/>
-        </properties>
-      </component>
-      <component id="609bc" class="javax.swing.JTextField" binding="inputPassword">
-        <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="370" height="60"/>
           </grid>
         </constraints>
@@ -97,6 +84,19 @@
           <font name="Courier New" size="12" style="1"/>
           <foreground color="-10105"/>
           <text value="PASSWORD"/>
+        </properties>
+      </component>
+      <component id="f181f" class="javax.swing.JPasswordField" binding="inputPassword">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="370" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-524"/>
+          <font name="Courier New" size="16"/>
+          <foreground color="-10105"/>
+          <horizontalAlignment value="0"/>
         </properties>
       </component>
     </children>

@@ -1,3 +1,5 @@
+package src;
+
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
@@ -15,6 +17,7 @@ public class Client {
     private JLabel iconCash;
     private JRadioButton choicesButtonCash;
     private JRadioButton choicesButtonAccountButton;
+    private JLabel logoHistory;
 
     static void main(String[] args) {
 
@@ -26,9 +29,9 @@ public class Client {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
+        // STARTING FROM HERE, SETS THE ICONS FOR CAR, MOTORSCYLE, CASH, AND ACCOUNT BALANCE
 
-
-        URL location = Client.class.getResource("/images/EURideLogo.png");
+        URL location = Client.class.getResource("/src/images/EURideLogo.png");
         ImageIcon icon = new ImageIcon(location);
         Image logo = icon.getImage().getScaledInstance(150,150, Image.SCALE_SMOOTH);
 
@@ -38,9 +41,7 @@ public class Client {
         client.logo.setOpaque(false);
 
 
-
-
-        URL location2 = Client.class.getResource("/images/Vector.png");
+        URL location2 = Client.class.getResource("/src/images/Vector.png");
         ImageIcon icon2 = new ImageIcon(location2);
         Image iconMotorcycle = icon2.getImage().getScaledInstance(39,31, Image.SCALE_SMOOTH);
 
@@ -50,8 +51,7 @@ public class Client {
         client.iconMotorcyle.setOpaque(false);
 
 
-
-        URL locatio3 = Client.class.getResource("/images/Car.png");
+        URL locatio3 = Client.class.getResource("/src/images/Car.png");
         ImageIcon icon3 = new ImageIcon(locatio3);
         Image iconCar = icon3.getImage().getScaledInstance(39,31, Image.SCALE_SMOOTH);
 
@@ -60,7 +60,7 @@ public class Client {
         client.iconCar.setOpaque(false);
 
 
-        URL locatio4 = Client.class.getResource("/images/cash.png");
+        URL locatio4 = Client.class.getResource("/src/images/cash.png");
         ImageIcon icon4 = new ImageIcon(locatio4);
         Image iconCash = icon4.getImage().getScaledInstance(39,31, Image.SCALE_SMOOTH);
 
@@ -69,7 +69,7 @@ public class Client {
         client.iconCash.setOpaque(false);
 
 
-        URL locatio5 = Client.class.getResource("/images/AccountBalance.png");
+        URL locatio5 = Client.class.getResource("/src/images/AccountBalance.png");
         ImageIcon icon5 = new ImageIcon(locatio5);
         Image iconAccountBalance = icon5.getImage().getScaledInstance(39,31, Image.SCALE_SMOOTH);
 
@@ -77,14 +77,24 @@ public class Client {
         client.iconAccountBalance.setText("");
         client.iconAccountBalance.setOpaque(false);
 
+
+
+        client.logoHistory.setIcon(new ImageIcon(logo));
+        client.logoHistory.setText("");
+        client.logoHistory.setOpaque(false);
+
+        // ENDS HERE....
+
+        // GROUPED THE CHOICES BUTTON, TO PREVENT MULTIPLE SELECTION ON GROUPED BUTTONS
+
         ButtonGroup vehicleGroup = new ButtonGroup();
 
         vehicleGroup.add(client.choicesButtonsCar);
         vehicleGroup.add(client.choicesButtonMotorcycle);
 
-
-
-
+        ButtonGroup paymentMethod = new ButtonGroup();
+        paymentMethod.add(client.choicesButtonCash);
+        paymentMethod.add(client.choicesButtonAccountButton);
 
     }
 
