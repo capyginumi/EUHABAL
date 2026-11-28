@@ -1,6 +1,8 @@
 package src;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.net.URL;
 
@@ -18,6 +20,7 @@ public class Client {
     private JRadioButton choicesButtonCash;
     private JRadioButton choicesButtonAccountButton;
     private JLabel logoHistory;
+    private JTable tableHistory;
 
     static void main(String[] args) {
 
@@ -77,8 +80,6 @@ public class Client {
         client.iconAccountBalance.setText("");
         client.iconAccountBalance.setOpaque(false);
 
-
-
         client.logoHistory.setIcon(new ImageIcon(logo));
         client.logoHistory.setText("");
         client.logoHistory.setOpaque(false);
@@ -95,6 +96,27 @@ public class Client {
         ButtonGroup paymentMethod = new ButtonGroup();
         paymentMethod.add(client.choicesButtonCash);
         paymentMethod.add(client.choicesButtonAccountButton);
+
+        // CREATES THE HISTORY TABLE
+        DefaultTableModel model = new DefaultTableModel();
+
+        model.addColumn("Rider");
+        model.addColumn("Contact");
+        model.addColumn("Vehicle");
+        model.addColumn("Date");
+        model.addColumn("Destination");
+        model.addColumn("Total");
+
+        model.addRow(new Object[]{
+                "John Doe",
+                "09123456789",
+                "Motorcycle",
+                "11/28/2026",
+                "SM City Lucena",
+                50.00
+        });
+
+        client.tableHistory.setModel(model);
 
     }
 
